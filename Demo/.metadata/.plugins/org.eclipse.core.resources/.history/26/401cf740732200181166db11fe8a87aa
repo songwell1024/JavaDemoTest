@@ -1,0 +1,9 @@
+package CloneTest;
+
+public class clone {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

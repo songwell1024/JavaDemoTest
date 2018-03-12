@@ -1,0 +1,33 @@
+package abstractClasses;
+
+import java.time.*;
+
+public class PersonTest {
+	
+
+}
+
+abstract class Person{
+	public abstract String getDescription();
+	
+	private String name;
+	
+	public Person(String name) {
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+}
+
+class Employee extends Person {
+	private double salary;
+	private LocalDate hireDay;
+	
+	public Employee(String name, double s, int year, int month, int day) {
+		super(name);
+		s = salary;
+		hireDay = LocalDate.of(year,month,day);
+	}
+}
