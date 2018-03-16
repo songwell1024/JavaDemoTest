@@ -1,0 +1,55 @@
+package mouse;
+
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.geom.*;
+import javax.swing.*;
+import javax.swing.event.*;
+import java.util.*;
+
+public class MouseCompent {
+	private static final int DEFAULT_WIDTH = 680;
+	private static final int DEFAULT_HEIGHT = 320;
+	
+	private static final int SIDELENGTH = 10;
+	private ArrayList<Rectangle2D> squares;
+	private Rectangle current;
+	
+	public MouseCompent() {
+		squares = new ArrayList<>();
+		current = null;
+		
+		addMouseListener(new MouseHander());
+		addMouseMotionListener();
+	}
+	
+	public Dimension getPreferredSize() {
+		return new Dimension(DEFAULT_WIDTH,DEFAULT_HEIGHT);
+	}
+	
+	public void paintComponent(Graphics2D g) {
+		Graphics2D g2 = (Graphics2D) g;
+		
+		for(Rectangle2D r :squares) {
+			g2.draw(r);
+		}
+	}
+	
+	public Rectangle2D find(Point2D p) {        //Point2D是面板中的点
+		for(Rectangle2D r : squares) {
+			if(r.contains(p)) {
+				return r;
+			}
+		}
+		return null;
+	}
+	
+	public void add(Point2D p) {
+		double x = p.getX();
+		double y = p.getY();
+		
+		current = new Rectangle2D.Double(x - SIDELENGTH/2, y-SIDELENGTH/2, SIDELENGTH, SIDELENGTH);
+		squares.add(current);
+	}
+
+}
