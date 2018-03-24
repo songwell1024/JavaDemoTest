@@ -1,0 +1,34 @@
+package TestTest;
+
+import java.util.Scanner;
+
+public class TestTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String xx;
+		Scanner in = new Scanner(System.in);
+		xx=in.nextLine();
+
+	}
+	
+	public String num(String s) {
+		int x;
+		int n = s.length();
+		char[] c = new char[n];
+		s.getchars(0,n-1,c,0);
+		
+		int[] num;
+		char[] y = {'0','1','2','3','4','5','6','7','8','9'};
+		if(n<1 || n>1000)
+		{
+			return null;
+		}
+		else {
+		for(int i=1; i<n;i++) {
+			num[i]= Integer.valueOf(c[i]);
+		}
+	}
+
+}
+

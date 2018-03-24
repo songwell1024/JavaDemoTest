@@ -1,0 +1,21 @@
+package TestTest;
+
+import java.util.Scanner;
+
+public class TestTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in  = new Scanner(System.in);
+		String  s = in.nextLine();
+		char c = s.charAt(0);
+
+	}
+	
+	public char lowerCaseToUpperCase(char character)  {
+		
+		return character.toUpperCase();;
+	}
+}
+

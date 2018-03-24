@@ -1,0 +1,14 @@
+package TestTest;
+import java.util.*;
+
+public class Test1 {
+	public static void main(String[] args) {
+		
+	}
+	
+	public String hexConversion(int n, int k) {
+		ArrayList<String> myList = new ArrayList<String>();
+		String s = (String) myList;
+	}
+
+}

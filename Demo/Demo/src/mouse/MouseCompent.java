@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.util.*;
 
 public class MouseCompent extends JComponent {
-	private static final int DEFAULT_WIDTH = 680;
+	private static final int DEFAULT_WIDTH = 520;
 	private static final int DEFAULT_HEIGHT = 320;
 	
 	private static final int SIDELENGTH = 10;
@@ -91,5 +91,4 @@ public class MouseCompent extends JComponent {
 			}
 		}
 	}
-
 }

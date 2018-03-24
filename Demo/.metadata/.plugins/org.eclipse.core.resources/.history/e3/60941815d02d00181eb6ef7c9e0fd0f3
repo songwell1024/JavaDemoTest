@@ -1,0 +1,27 @@
+package TestTest;
+
+import java.util.Scanner;
+
+public class TestTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String xx;
+		Scanner in = new Scanner(System.in);
+		xx=in.nextLine();
+
+	}
+	
+	public int num(String s) {
+		int x;
+		int n = s.length();
+		int[] num;
+		char[] y = {'0','1','2','3','4','5','6','7','8','9'};
+		for(int i=1; i<n;i++) {
+			num[i]= Integer.valueOf(s);
+		}
+		return x;
+	}
+
+}
+

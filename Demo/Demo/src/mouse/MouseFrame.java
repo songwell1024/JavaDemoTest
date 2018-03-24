@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class MouseFrame extends JFrame{
 	public static void main(String[] args) {
-		MouseFrame frame = new MouseFrame();
+		JFrame frame = new MouseFrame();
 		frame.setVisible(true);
 		//frame.paintComponent(O);
 	}
