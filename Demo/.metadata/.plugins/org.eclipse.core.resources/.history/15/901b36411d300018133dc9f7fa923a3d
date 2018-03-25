@@ -1,0 +1,15 @@
+package synch;
+
+import java.util.*;
+
+public class Bank {
+	private final double[] accounts;
+	public static void main(String[] args) {
+		
+	}
+	public Bank(int n, double initialBalance) {
+		accounts = new double[n];
+		Arrays.fill(accounts, initialBalance);
+	}
+
+}
