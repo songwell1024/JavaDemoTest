@@ -1,0 +1,10 @@
+package ForkJoinTest;
+import java.util.concurrent.*;
+import java.util.function.*;
+
+public class forkJoin {
+	public static void main(String[] args) {
+		
+	}
+
+}
