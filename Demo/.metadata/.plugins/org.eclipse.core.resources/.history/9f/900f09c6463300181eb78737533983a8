@@ -1,0 +1,17 @@
+package TestTest;
+import java.util.*;
+
+public class Test3 {
+	Scanner in = new Scanner(System.in);
+	int n = in.nextInt();
+	int[][] hotel =  new int[n][3];
+	for(int i = 0; i < 3 * n; i++) {
+		hotel[i][1] = in.nextInt();
+		hotel[i][2] = in.nextInt();
+		hotel[i][3] = in.nextInt();
+	}
+	int person  = in.nextInt();
+	int child = in.nextInt();
+	int days = in.nextInt();
+
+}
